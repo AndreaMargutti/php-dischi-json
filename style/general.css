@@ -1,3 +1,4 @@
+/* # Generals*/
 header {
     background-color: #05131e;
     padding: 1rem;
@@ -7,6 +8,7 @@ main {
     background-color: #1d2d3c;
 }
 
+/* # Cards */
 .bg-card {
     background-color: #10202f;
     color: white;

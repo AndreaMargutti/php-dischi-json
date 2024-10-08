@@ -20,14 +20,18 @@
 
 <body>
     <div id="app">
+        <!--Start of Header-->
         <header>
             <img src="./img/Spotify_Primary_Logo_RGB_Green.png" alt="spotify_logo" width="75">
         </header>
+        <!--Start of Main-->
         <main>
             <div class="row">
                 <div class="col-4 d-flex justify-content-around p-3" v-for="disk in diskList">
+                    <!--Card-->
                     <div class="card bg-card text-center p-3" style="width: 19rem">
                         <img :src="disk.poster" class="card-img-top" alt="disk.title">
+                        <!--Card Body-->
                         <div class="card-body">
                           <h5 class="card-title fw-bold">{{ disk.title}}</h5>
                           <p class="card-text">
@@ -36,10 +40,12 @@
                            <span class="fw-bold"> {{ disk.year }} </span>
                           </p>
                         </div>
-                      </div>
+                    </div>
+                    <!--End of Card-->
                 </div>
             </div>
         </main>
+    
     </div>
 </body>
 
