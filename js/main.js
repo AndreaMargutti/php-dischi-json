@@ -3,18 +3,20 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-
+            diskList: [],
         }
     },
 
     methods: {
         getDisk() {
             axios.get('http://localhost/php-dischi-json/api/dischi-api.php')
-                .then(function (response) {
+                .then(response => {
                     // handle success
-                    console.log(response);
+                    console.log(response.data);
+                    this.diskList = response.data;
+                    console.log(this.diskList);
                 })
-                .catch(function (error) {
+                .catch(error => {
                     // handle error
                     console.log(error);
                 })
@@ -22,6 +24,6 @@ createApp({
     },
 
     created() {
-        getDisk();
+        this.getDisk()
     }
 }).mount('#app')
