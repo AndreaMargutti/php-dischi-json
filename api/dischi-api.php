@@ -6,6 +6,7 @@ $dischi = file_get_contents("../data/dischi.json");
 // # Dico al browser di analizzarlo come file json
 header("Content-Type: application/json");
 
+//mostro i contenuti
 echo $dischi;
 
 ?>
