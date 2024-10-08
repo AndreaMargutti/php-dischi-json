@@ -24,8 +24,14 @@
             <div class="row">
                 <div class="col-12">
                     <ul>
-                        <li>
-
+                        <li v-for="disk in diskList">
+                            <h3>{{ disk.author }}</h3>
+                            <p>
+                                {{ disk.genre }}
+                                {{ disk.title }}
+                                {{ disk.year }}
+                            </p>
+                            <img :src="disk.poster" alt="cover">
                         </li>
                     </ul>
                 </div>

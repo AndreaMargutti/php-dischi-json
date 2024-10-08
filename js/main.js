@@ -20,7 +20,11 @@ createApp({
                     // handle error
                     console.log(error);
                 })
-        }
+        },
+
+        getImgPath() {
+
+        },
     },
 
     created() {
